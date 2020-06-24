@@ -1,23 +1,27 @@
 {
-    "name": "MyFullStack",
-    "version": "1.0.0",
-    "description": "A simple full stack application using SAP Cloud Application Programming model",
-    "repository": "<Add your repository here>",
-    "license": "UNLICENSED",
-    "private": true,
-    "dependencies": {
-        "@sap/cds": "^3",
-        "express": "^4",
-        "@sap/hana-client": "^2.4.177"
-    },
-    "scripts": {
-        "start": "npx cds run"
-    },
-    "cds": {
-        "requires": {
-            "db": {
-                "kind": "hana"
-            }
+  "name": "MyFullStack",
+  "version": "1.0.0",
+  "description": "A simple full stack application using SAP Cloud Application Programming model",
+  "repository": "https://github.com/miltonchandradas/capfullstack.git",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^3",
+    "@sap/hana-client": "^2.4.177",
+    "express": "^4",
+    "sqlite3": "^4.2.0"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql",
+        "[production]": {
+          "kind": "hana"
         }
+      }
     }
+  }
 }

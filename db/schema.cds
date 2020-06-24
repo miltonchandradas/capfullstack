@@ -1,3 +1,5 @@
+namespace demo;
+
 type Address {
     street: String(100);
     city: String(20);
@@ -5,7 +7,7 @@ type Address {
     zip: String(10);
 }
 
-entity Products {
+entity Products  {
     key id: Integer;
     name: String(100);
     description:String(1000);
@@ -18,7 +20,7 @@ entity Products {
 }
 
 
-entity Suppliers {
+entity Suppliers  {
     key id: Integer;
     name: String(100);
     contactName: String(100);

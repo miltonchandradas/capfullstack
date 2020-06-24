@@ -1,10 +1,9 @@
-using {Products, Suppliers} from '../db/schema';
+using {demo} from '../db/schema';
 
 service TechService {
 
-    entity ProductSet as SELECT from Products {*, 
+    entity Products as SELECT from demo.Products {*, 
     supplier.name as supplierName, supplier.contactName as supplierContact};
 
-    entity SupplierSet as select from Suppliers;
-
+    entity Suppliers as select from demo.Suppliers;
 }
