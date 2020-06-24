@@ -1,0 +1,11 @@
+### GET Products
+GET http://localhost:4004/tech/ProductSet
+
+
+### GET Suppliers
+GET http://localhost:4004/tech/SupplierSet
+
+
+### GET metadata
+GET http://localhost:4004/tech/$metadata
+
