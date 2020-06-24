@@ -1,6 +1,4 @@
-const cds = require('@sap/cds');
-
-module.exports = cds.service.impl(srv => {
+module.exports = cds.service(srv => {
     srv.before("*", req => console.debug(">>>", req.method, req.target.name));
 
     srv.on("READ", "Products", async (req, next) => {
